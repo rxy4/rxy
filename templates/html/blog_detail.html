@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rxy博客</title>
+    <link rel="stylesheet" href="{% static 'bootstrap5/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap5/bootstrap.bundle.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+ <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom mb-3">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">首页</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">发布博客</a></li>
+
+      </ul>
+<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="搜索..." aria-label="Search">
+        </form>
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">登录</button>
+                     <button type="button" class="btn btn-primary">注册</button>
+                 </div>
+    </header>
+<main class="container bg-white rounded" style="width: 1000px ">
+    <h1 style="font-size: 24px;">Django课程详情</h1>
+    <hr>
+    <div class="mt-2">
+        <img src="{% static 'image/rxy.jpg' %}" class="rounded-circle" alt="" style="width: 25px">任选一
+    <span class="ms-2">rxy</span>
+    <span class="ms-2">于</span>
+        <span class="ms-2">明天</span>发布
+    </div>
+    <hr>
+    <div class="py-2">这是博客详情</div>
+    <hr>
+    <div class="mt-2">
+        <h3>评论(10)</h3>
+        <form action="" method="POST">
+            <div class="mt-2">
+                <input type="text" class="form-control" placeholder="请输入评论">
+            </div>
+            <div class="text-end mt-2" ><button type="button" class="btn btn-primary">评论</button></div>
+        </form>
+    </div>
+    <div class="mt-2"><ul class="list-group list-group-flush">
+  <li class="list-group-item"><div class="d-flex justify-content-between text-body-secondary">
+      <div class="user-info"><img src="{% static 'image/rxy.jpg' %}" class="rounded-circle" alt="" style="width: 25px">
+      <span class="ms-2">任选一</span>
+      </div>
+      <div class="create-time"> 明天</div>
+         </div>
+      <div class="mt-2">这是评论内容</div>
+  </li>
+
+</ul></div>
+
+</main>
+
+</body>
+</html>
